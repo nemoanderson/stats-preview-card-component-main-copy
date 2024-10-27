@@ -2,46 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="We are data analytics. Get insights on your business to make better decisions. Book your demo now!"
+      content="Frontend Mentor - Stats preview card component solution by Nemo Anderson. This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)."
     />
-    <link rel="stylesheet" href="style2.css" />
-    <title>Preview Card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Stats preview card component</title>
   </head>
   <body>
     <div class="container">
-      <!-- Content on the left -->
-      <div class="card">
-        <section class="info">
-          <h1>
-            Get <span class="highlight">insights</span> that help your business
-            grow.
+      <div class="wrapper">
+        <div class="card-text">
+          <h1 class="title">
+            Get <span>insights</span> that help your business grow.
           </h1>
-          <p>
+          <p class="subtitle">
             Discover the benefits of data analytics and make better decisions
-            regarding revenue, customer experience, and overall efficiency.
+            regarding revenue, customer and experience, and overall efficiency.
           </p>
-          <div class="stats">
-            <div class="companies">
-              <div class="number">10k+</div>
-              <div class="name">Companies</div>
+          <div class="stats-box">
+            <div>
+              <h2 class="num">10k+</h2>
+              <p>companies</p>
             </div>
-            <div class="templates">
-              <div class="number">314</div>
-              <div class="name">Templates</div>
+            <div>
+              <h2 class="num">314</h2>
+              <p>templates</p>
             </div>
-            <div class="queries">
-              <div class="number">12M+</div>
-              <div class="name">Queries</div>
+            <div>
+              <h2 class="num">12M+</h2>
+              <p>queries</p>
             </div>
           </div>
-        </section>
-
-        <!-- Image on the right -->
-        <section class="card-img"></section>
+        </div>
+        <div class="img-card">
+          <img src="./images/image-header-desktop.jpg" alt="" />
+        </div>
       </div>
     </div>
   </body>
