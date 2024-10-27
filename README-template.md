@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile](./Screen%20Shot%202024-10-26%20at%2022.21.08.png)
-![Desktop](./Screen%20Shot%202024-10-26%20at%2022.21.08.png)
+![Desktop](./Screenshot%202024-10-26%20at%2022-27-59%20Document.png)
 
 ### Links
 
