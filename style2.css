@@ -1,0 +1,268 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --main-bg: hsl(233, 47%, 7%);
+    --card-bg: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-pg: hsla(0, 0%, 100%, 0.75);
+    --stat-head: hsla(0, 0%, 100%, 0.6);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--main-bg);
+    color: var(--White); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+.stats {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card {
+    width: 70vw;
+    background: var(--card-bg);
+    border-radius: 10px;    
+    margin: 0 auto;
+    display: flex;
+   
+}
+ 
+.card .info {
+    width: 50%;
+    padding: 4rem;
+    
+}
+
+.card .info h1 {
+    font-size: 2.3rem;
+    margin-bottom: .1rem;
+
+}
+
+.highlight {
+    color: var(--accent);
+    font-size: 1.9rem;
+}
+
+.card .info p {
+    color: var(--main-pg);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.card .stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .stats .number {
+    font-size: 1.5rem;
+    font-weight: 700;   
+}
+
+.card .stats .name { 
+    font-size: .8rem;
+    color: var(--stat-head);
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.card .card-img {
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    background: linear-gradient(
+        0deg,
+        hsla(277, 86%, 47%, 0.6) 0%,
+            hsla(277, 86%, 47%, 0.6) 100%
+        ),
+        url(images/image-header-desktop.jpg)
+        center no-repeat;
+        background-size: cover;
+        padding: 1.5rem;
+        border-radius: 0 10px 10px 0;
+}
+
+
+/*  media queries */
+@media (max-width: 375px) {
+    
+
+    .card {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 90vw;
+        height: 90vh;
+    }
+    .card .info {
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .card .card-img {
+        width: auto;
+        height: 50vh;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 10px 10px 0 0;
+        background: linear-gradient(
+            0deg,
+            hsla(277, 86%, 47%, 0.6) 0%,
+            hsla(277, 86%, 47%, 0.6) 100%
+            ),
+            url(images/image-header-mobile.jpg)
+            center no-repeat;
+            background-size: cover;
+    }
+
+    .card .stats {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .card .stats .companies,
+    .card .stats .templates,
+    .card .stats .queries {
+        margin-bottom: 1rem;
+        
+    }
+
+    .number {
+        padding: .5rem;
+    
+}
+
+/*
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 0 0 10px;
+    padding: 40px;
+}
+
+
+.info-p {
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 70%;
+    margin-top: 25px;
+    line-height: 25px;
+    
+}
+
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 540px;
+    height: 330px;
+} 
+
+.stat-top {
+   flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.stat-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.img {
+    background-color: hsl(277, 64%, 61%);
+    filter: sepia(100%) hue-rotate(300deg);
+    
+     position: relative;
+    z-index: 1; 
+    border-radius: 0 10px 10px 0;
+    background-image: url('./images/image-header-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   opacity: 0.5;
+   filter: grayscale(100%); 
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.main-img {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%; 
+    border-radius: 0 10px 10px 0;
+    opacity: 0.5;
+
+}  
+ 
+
+@media only screen and (max-width: 600px) 
+{   
+
+    .stats {
+        flex-direction: column;
+        width: 350px;
+        height: 500px;
+    }   
+
+    .info {
+        border-radius: 10px 10px 0 0;
+    }           
+
+    .img {
+        border-radius: 10px 10px 0 0;
+    }
+
+
+ 
+}
+
+
+
+
+
+*/
