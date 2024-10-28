@@ -82,7 +82,7 @@ body {
 
 .img-card::after {
   position: absolute;
-  content: "";
+  content: " ";
   height: 100%;
   width: 100%;
   left: 0;
@@ -91,6 +91,19 @@ body {
 }
 
 /* media queries */
+
+/* change at 839px  */
+@media (max-width: 839px) and (min-width: 874px) {
+  .stats-box {
+    font-size: 72%;
+  }
+}
+/*change at 582px  */   
+@media (max-width: 582px) and (min-width: 640px) {
+  .stats-box {
+    font-size: 72%;
+  }
+}
 
 @media (max-width: 874px) and (min-width: 582px) {
   .stats-box {
